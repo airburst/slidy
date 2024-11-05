@@ -32,7 +32,9 @@
   transform: translateX(100%);
 }
 
-.enter-active,
+.enter-active {
+  transition: all 400ms ease-out;
+}
 .exit-active {
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in;
 }
