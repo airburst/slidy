@@ -1,0 +1,39 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Next (right) */
+.right .enter {
+  transform: translateX(100%);
+}
+.right .enter-active {
+  transform: translateX(0%);
+}
+.right .exit {
+  transform: translateX(0%);
+}
+.right .exit-active {
+  transform: translateX(-100%);
+}
+
+/* Prev (left) */
+.left .enter {
+  transform: translateX(-100%);
+}
+.left .enter-active {
+  transform: translateX(0%);
+}
+.left .exit {
+  transform: translateX(0%);
+}
+.left .exit-active {
+  transform: translateX(100%);
+}
+
+.enter-active,
+.exit-active {
+  transition: all 400ms ease-in-out;
+}
