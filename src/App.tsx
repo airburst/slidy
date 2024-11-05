@@ -1,3 +1,4 @@
+import {Button} from "@simplybusiness/mobius";
 import {useRef, useState} from "react";
 import {CSSTransition, SwitchTransition} from "react-transition-group";
 import "./App.css";
@@ -36,8 +37,12 @@ function App() {
         </SwitchTransition>
 
         <div className="buttons">
-          <button onClick={prevPage}>Previous</button>
-          <button onClick={nextPage}>Next</button>
+          <Button onClick={prevPage} variant="secondary">
+            Previous
+          </Button>
+          <Button onClick={nextPage} variant="primary">
+            Next
+          </Button>
         </div>
       </main>
       <footer className="footer">Footer</footer>

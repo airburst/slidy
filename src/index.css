@@ -20,8 +20,8 @@ body,
 
 main {
   position: relative;
-  text-align: center;
   flex: 1 1 0;
+  padding: 2rem;
 }
 
 .header {
